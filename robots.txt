@@ -1,4 +1,4 @@
-Sitemap: http://dubuval.dubuget.fr/sitemap.xml
+Sitemap: http://dubuvaltest.dubuget.fr/sitemap.xml
 
 User-agent: *
 Crawl-Delay: 300

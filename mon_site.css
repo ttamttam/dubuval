@@ -169,6 +169,7 @@ a.blog-back-home{padding-bottom:20px;display:block;}
 .responsivecolumns .columns-four-fourth{margin-right:0;}
 .content{-ms-word-break:break-word;word-break:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;hyphens:auto;}
 .content .bk-content-text ol{list-style-position:inside;}
+div.bk-content-text {padding: 20px 0 0 0;}
 .expand .more,.expand .less{color:#96d3ed;cursor:pointer;}
 .widget.line{*zoom:1;padding:20px 0;}
 .widget.line:before,.widget.line:after{content:" ";display:table;}
@@ -735,7 +736,8 @@ body{background-color:#fff;margin:0;padding:0;}
 }
 .canvas{background-color:#f2f2f2;max-width:1080px;width:90%;margin:0 auto;padding:0 0 60px;}
 .canvas .widget{clear:both;}
-.main{padding:50px 0;}
+.entete{padding:0 }
+.main{padding:30px 0;}
 body.edit .widget.navigation,body.edit .widget.extendednavigation{overflow:visible;}
 .bk-default{display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-webkit-flex;display:flex;min-height:100vh;flex-direction:column;-webkit-flex-direction:column;-ms-flex-direction:column;}
 @media only screen and (max-width: 769px){.bk-default{display:initial;}
@@ -1019,3 +1021,5 @@ footer.bk-footer{padding:3em 0;}
 .widget.clicktocall a{background-image: url(//55b558c7-resources.gandi.ws/7551544107272b986275573949f36a5c/templates/liftmodule/images/ic-call.svg);background-color:#96d3ed;background-position:26px center;background-size:7px;background-repeat:no-repeat;margin:0.5em 0em;padding:11px 25px 11px 43px;border:0;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;box-shadow:0px 2px 0px #6ac1e6;font-family:"Karla", Verdana, Geneva, sans-serif;font-size:18px;font-weight:inherit;color:#fff;text-decoration:none;}
 .widget.clicktocall a:hover{background-image: url(//55b558c7-resources.gandi.ws/7551544107272b986275573949f36a5c/templates/liftmodule/images/ic-call.svg);background-color:#96d3ed;background-position:26px center;background-size:7px;background-repeat:no-repeat;padding:11px 25px 11px 43px;color:#fff;box-shadow:0px 2px 0px #29a5da;cursor:pointer;-webkit-transition:background-color 0.15s ease-in-out;-moz-transition:background-color 0.15s ease-in-out;-o-transition:background-color 0.15s ease-in-out;transition:background-color 0.15s ease-in-out;}
 }
+table {width: 450px; height: 204px;border-collapse: collapse; border-spacing: 0px; font: inherit; border: 0px none;background-color:rgb(255,255,255);text-align:center}
+tr.table_header {height: 19px;background-color: rgb(230, 230, 230);font-weight: bold;}
