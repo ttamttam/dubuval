@@ -1,9 +1,132 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<sitemapindex
-    xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-  <sitemap>
-    <loc>http://dubuval.dubuget.fr/sitemap_pages.xml</loc>
-  </sitemap>
-</sitemapindex>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>http://dubuval.dubuget.fr/index.html</loc>
+
+    <image:image>
+      <image:loc>http://example.com/image.jpg</image:loc>
+      <image:caption>Chiens jouant aux cartes</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>http://dubuval.dubuget.fr/files/site-bandeau-2013-valloire-00036379.jpg</image:loc>
+      <image:caption>Panorama</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>http://dubuval.dubuget.fr/files/situation-redimensionn_2.jpg</image:loc>
+      <image:caption>Plan de situation</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>http://dubuval.dubuget.fr/files/plan_1.resized.png</image:loc>
+      <image:caption>Plan de l’appartement</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>http://dubuval.dubuget.fr/files/salon_cuisine/cuisine-01.resized.jpg</image:loc>
+      <image:caption>Cuisine</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>http://dubuval.dubuget.fr/files/salon_cuisine/salon-01.resized.jpg</image:loc>
+      <image:caption>Salon vu depuis la cuisine</image:caption>
+    </image:image>
+
+
+    <image:image>
+      <image:loc>http://dubuval.dubuget.fr/files/salon_cuisine/salon-05.resized.jpg</image:loc>
+      <image:caption>Salon</image:caption>
+    </image:image>
+
+
+    <image:image>
+      <image:loc>http://dubuval.dubuget.fr/files/salon_cuisine/salon-06.resized.jpg</image:loc>
+      <image:caption>Salon</image:caption>
+    </image:image>
+
+
+    <image:image>
+      <image:loc>http://dubuval.dubuget.fr/files/salon_cuisine/thumb_img_3740_1024.jpeg</image:loc>
+      <image:caption>Cuisine vue depuis le salon</image:caption>
+    </image:image>
+
+
+    <image:image>
+      <image:loc>http://dubuval.dubuget.fr/files/chambre1/chambre3-07.resized.jpg</image:loc>
+      <image:caption>Chambre 1</image:caption>
+    </image:image>
+
+
+    <image:image>
+      <image:loc>http://dubuval.dubuget.fr/files/chambre2/chambre1-10.resized.jpg</image:loc>
+      <image:caption>Chambre 2</image:caption>
+    </image:image>
+
+
+    <image:image>
+      <image:loc>http://dubuval.dubuget.fr/files/chambre2/chambre1-09.resized.jpg</image:loc>
+      <image:caption>Chambre 2</image:caption>
+    </image:image>
+
+
+    <image:image>
+      <image:loc>http://dubuval.dubuget.fr/files/chambre3/chambre2-01.resized.jpg</image:loc>
+      <image:caption>Chambre 3</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>http://dubuval.dubuget.fr/files/chambre3/chambre2-02.resized.jpg</image:loc>
+      <image:caption>Chambre 3</image:caption>
+    </image:image>
+
+
+    <image:image>
+      <image:loc>http://dubuval.dubuget.fr/files/sdb/sdb1-03.resized.jpg</image:loc>
+      <image:caption>Salle-de-bains 2</image:caption>
+    </image:image>
+
+
+    <image:image>
+      <image:loc>http://dubuval.dubuget.fr/files/sdb/sdb1-04.resized.jpg</image:loc>
+      <image:caption>Salle-de-bains 2</image:caption>
+    </image:image>
+
+
+    <image:image>
+      <image:loc>http://dubuval.dubuget.fr/files/sdb/sdb2-02.resized.jpg</image:loc>
+      <image:caption>Salle-de-bains 1</image:caption>
+    </image:image>
+
+
+    <image:image>
+      <image:loc>http://dubuval.dubuget.fr/files/casiersskis20151128_1.resized.jpg</image:loc>
+      <image:caption>Casier à skis et chaussures</image:caption>
+    </image:image>
+
+
+    <image:image>
+      <image:loc>http://dubuval.dubuget.fr/files/exterieur-parking.jpeg</image:loc>
+      <image:caption>Parking de la résidence</image:caption>
+    </image:image>
+
+
+    <image:image>
+      <image:loc>http://dubuval.dubuget.fr/files/exterieur-vue-02.jpg</image:loc>
+      <image:caption>Vue</image:caption>
+    </image:image>
+
+
+    <image:image>
+      <image:loc>http://dubuval.dubuget.fr/files/exterieur-terrasse.resized.jpg</image:loc>
+      <image:caption>Terrasse</image:caption>
+    </image:image>
+
+
+    <image:image>
+      <image:loc>http://dubuval.dubuget.fr/files/exterieur-table.resized.jpg</image:loc>
+      <image:caption>Vue depuis la terrasse</image:caption>
+    </image:image>
+
+  </url>
+</urlset>
