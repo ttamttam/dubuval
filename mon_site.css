@@ -406,7 +406,7 @@ hr.line{background-color:#d2d2d2;}
 .widget.feature button{background-color:#96d3ed;font-family:"Karla", Verdana, Geneva, sans-serif;font-size:18px;font-weight:inherit;line-height:32px;color:#fff;letter-spacing:inherit;}
 .widget.feature button:hover{background-color:#6ac1e6;}
 body{background-color:#fff;font-family:"Karla", Verdana, Geneva, sans-serif;font-size:16px;font-weight:400;line-height:28px;color:#838383;letter-spacing:inherit;}
-a{color:#96d3ed;text-decoration:none;}
+a{color:#1db4f4;text-decoration:none;}
 a:hover{text-decoration:underline;}
 h1{font-family:"Karla", Verdana, Geneva, sans-serif;font-weight:400;color:#5a5959;line-height:38px;letter-spacing:inherit;font-size:30px;}
 h2{font-family:"Karla", Verdana, Geneva, sans-serif;font-size:24px;font-weight:inherit;line-height:36px;color:#838383;letter-spacing:inherit;}
@@ -1023,3 +1023,13 @@ footer.bk-footer{padding:3em 0;}
 }
 table {width: 450px; height: 204px;border-collapse: collapse; border-spacing: 0px; font: inherit; border: 0px none;background-color:rgb(255,255,255);text-align:center}
 tr.table_header {height: 19px;background-color: rgb(230, 230, 230);font-weight: bold;}
+div.sommaire {
+    position:fixed;
+    left: -175px;
+    top: 90px;
+    transition: 0.5s;
+    background-color:  rgb(230, 230, 230);
+}
+div.sommaire:hover {left: 10px}
+p.vert {writing-mode: tb-rl}
+div.insommaire {display:table-cell}
