@@ -44,6 +44,15 @@
          function closeNav() {
              document.getElementById("mySidenav").style.width = "0";
          }
+
+         /* Manage navigation visibility */
+         var prevScrollpos = window.pageYOffset;
+         window.onscroll = function() {
+             var currentScrollpos = window.pageYOffset;
+             var visibility = (prevScrollpos > currentScrollpos) ? "visible" : "hidden";
+             document.getElementById("fixedbuttondiv").style.visibility = visibility;
+             prevScrollpos = currentScrollpos;
+         }
         </script>
     </head>
 
@@ -823,7 +832,7 @@
                     </ul>
                 </nav>
             </div>
-            <div>
+            <div id="fixedbuttondiv">
                 <a href="#head" onclick="openNav()">
                     <img id="fixedbutton" src="files/menu.png" >
                 </a>
