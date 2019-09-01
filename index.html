@@ -49,7 +49,7 @@
          var prevScrollpos = window.pageYOffset;
          window.onscroll = function() {
              var currentScrollpos = window.pageYOffset;
-             var visibility = (prevScrollpos > currentScrollpos) ? "visible" : "hidden";
+             var visibility = (prevScrollpos >= currentScrollpos) ? "visible" : "hidden";
              document.getElementById("fixedbuttondiv").style.visibility = visibility;
              prevScrollpos = currentScrollpos;
          }
@@ -529,13 +529,11 @@
                             id="page-zones__main-widgets__image"
                             class="widget image"
                             data-uniqueid="page-zones__main-widgets__image">
-                            <a  href="#" data-image-href="files/situation-redimensionn_2.jpg" rel="lightbox"  title="">
+                            <a  href="#" data-image-href="files/situation.png" rel="lightbox"  title="">
  	                              <span class="image-img">
-	                                  <img class="image" src="files/situation-redimensionn_2.jpg"
+	                                  <img class="image" src="files/situation.png"
                                          title="Plan de situation"
-                                         data-filename="situation-redimensionn_2.jpg"
-                                         data-filesize="842332"
-                                         data-imagesize="1000 x 706"
+                                         data-filename="situation.png"
                                          width="1000"  />
 	                              </span>
 	                          </a>
