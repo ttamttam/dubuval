@@ -5,18 +5,13 @@
     <loc>http://dubuval.dubuget.fr/index.html</loc>
 
     <image:image>
-      <image:loc>http://example.com/image.jpg</image:loc>
-      <image:caption>Chiens jouant aux cartes</image:caption>
-    </image:image>
-
-    <image:image>
       <image:loc>http://dubuval.dubuget.fr/files/site-bandeau-2013-valloire-00036379.jpg</image:loc>
       <image:caption>Panorama</image:caption>
     </image:image>
 
     <image:image>
-      <image:loc>http://dubuval.dubuget.fr/files/situation-redimensionn_2.jpg</image:loc>
-      <image:caption>Plan de situation</image:caption>
+        <image:loc>http://dubuval.dubuget.fr/files/situation.png</image:loc>
+        <image:caption>Plan de situation</image:caption>
     </image:image>
 
     <image:image>
