@@ -752,7 +752,7 @@ header.bk-header .wrapper .widget.extendednavigation{-webkit-box-flex:1;-moz-box
 }
 .headerprofile{background-color:#fff;}
 .widget.logo{display:inline-block;vertical-align:middle;line-height:0;margin-right:16px;}
-.widget.companyname{display:inline-block;vertical-align:middle;padding:10px 0;}
+.widget.companyname{display:inline-block;vertical-align:middle;padding:10px 0 0 60px;}
 footer.bk-footer{padding:4em 0;background-color:#313131;}
 footer.bk-footer h1,footer.bk-footer h2,footer.bk-footer h3,footer.bk-footer h4,footer.bk-footer p,footer.bk-footer span{max-width:390px;color:#fff;}
 footer.bk-footer h2{color:#fff;}
