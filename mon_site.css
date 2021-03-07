@@ -1025,19 +1025,23 @@ table {width: 450px; height: 204px;border-collapse: collapse; border-spacing: 0p
 tr.table_header {height: 19px;background-color: rgb(230, 230, 230);font-weight: bold;}
 p.vert {writing-mode: tb-rl}
 
+div#mySidenav { width = 0px;}
+
 /* The side navigation menu */
-.sidenav {
+div.sidenav {
     height: 100%; /* 100% Full-height */
-    width: 0; /* 0 width - change this with JavaScript */
+    width: 0px; /* 0 width - change this with JavaScript */
     position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
+    z-index: 3; /* Stay on top */
     top: 0; /* Stay at the top */
     left: 0;
     background-color: #111; /* Black*/
-    overflow-x: hidden; /* Disable horizontal scroll */
+    over>flow-x: hidden; /* Disable horizontal scroll */
     padding-top: 40px; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    transition: 0.8s; /* 0.5 second transition effect to slide in the sidenav */
 }
+
+.sidenav nav { display: none}
 
 /* The navigation menu links */
 .sidenav a {
@@ -1045,7 +1049,7 @@ p.vert {writing-mode: tb-rl}
     text-decoration: none;
     /* font-size: 25px; */
     color: #818181;
-    display: block;
+    display: inline-block;
     transition: 0.3s;
 }
 
@@ -1063,8 +1067,15 @@ p.vert {writing-mode: tb-rl}
     margin-left: 40px;
 }
 
+a#closeButton {
+    display: none;
+    text-align: end;
+    font-size: 26px;
+}
+
 #fixedbutton {
     position: fixed;
     top: 10px;
     left: 10px;
+    z-index: 2;
 }
