@@ -3,6 +3,7 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
     <url>
         <loc>https://dubuval.dubuget.fr/index.html</loc>
+        <loc>https://dubuval.dubuget.fr/reservation.html</loc>
         <loc>https://dubuval.dubuget.fr/inventaire.html</loc>
         <loc>https://dubuval.dubuget.fr/inventaire.pdf</loc>
 
