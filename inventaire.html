@@ -8,10 +8,19 @@
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
-    span.underline{text-decoration: underline;}
-    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-    ul.task-list{list-style: none;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
   <link rel="stylesheet" href="pandoc.css" />
 </head>
@@ -21,537 +30,399 @@
 </header>
 <h2 id="entrée">Entrée</h2>
 <ul class="task-list">
-<li><input type="checkbox" disabled="" />
-interphone</li>
-<li><input type="checkbox" disabled="" />
-1 grand placard</li>
-<li><input type="checkbox" disabled="" />
-1 fer à repasser</li>
-<li><input type="checkbox" disabled="" />
-1 pelle à neige</li>
-<li><input type="checkbox" disabled="" />
-1 escabeau à 4 marches</li>
-<li><input type="checkbox" disabled="" />
-1 planche à repasser</li>
-<li><input type="checkbox" disabled="" />
-1 balai poussière</li>
-<li><input type="checkbox" disabled="" />
-1 balai espagnol avec seau réceptacle</li>
-<li><input type="checkbox" disabled="" />
-1 pelle + balayette</li>
-<li><input type="checkbox" disabled="" />
-<strong>1 aspirateur Rowenta</strong></li>
-<li><input type="checkbox" disabled="" />
-produits ménagers</li>
-<li><input type="checkbox" disabled="" />
-porte-manteaux : 36 patères</li>
-<li><input type="checkbox" disabled="" />
-meuble « après-ski »</li>
-<li><input type="checkbox" disabled="" />
-3 corbeilles</li>
+<li><label><input type="checkbox" />interphone</label></li>
+<li><label><input type="checkbox" />1 grand placard</label></li>
+<li><label><input type="checkbox" />1 fer à repasser</label></li>
+<li><label><input type="checkbox" />1 pelle à neige</label></li>
+<li><label><input type="checkbox" />1 escabeau à 4 marches</label></li>
+<li><label><input type="checkbox" />1 planche à repasser</label></li>
+<li><label><input type="checkbox" />1 balai poussière</label></li>
+<li><label><input type="checkbox" />1 balai espagnol avec seau
+réceptacle</label></li>
+<li><label><input type="checkbox" />1 pelle + balayette</label></li>
+<li><label><input type="checkbox" /><strong>1 aspirateur
+Rowenta</strong></label></li>
+<li><label><input type="checkbox" />produits ménagers</label></li>
+<li><label><input type="checkbox" />porte-manteaux : 36
+patères</label></li>
+<li><label><input type="checkbox" />meuble « après-ski »</label></li>
+<li><label><input type="checkbox" />3 corbeilles</label></li>
 </ul>
 <h2 id="séjourcuisine">Séjour/Cuisine</h2>
 <ul class="task-list">
-<li><input type="checkbox" disabled="" />
-1 cartographie</li>
-<li><input type="checkbox" disabled="" />
-3 cadres</li>
-<li><input type="checkbox" disabled="" />
-4 tringlettes</li>
-<li><input type="checkbox" disabled="" />
-6 rideaux</li>
-<li><input type="checkbox" disabled="" />
-<strong>1 télévision LG + télécommande</strong></li>
-<li><input type="checkbox" disabled="" />
-<strong>1 décodeur + box orange + télécommande</strong></li>
-<li><input type="checkbox" disabled="" />
-<strong>1 décodeur branché en HDMI sur la télévision</strong></li>
-<li><input type="checkbox" disabled="" />
-<strong>1 boîtier Tydom</strong></li>
-<li><input type="checkbox" disabled="" />
-1 téléphone</li>
-<li><input type="checkbox" disabled="" />
-1 meuble à 3 tiroirs</li>
-<li><input type="checkbox" disabled="" />
-1 table basse en bois</li>
-<li><input type="checkbox" disabled="" />
-1 lampadaire mono-branche</li>
-<li><input type="checkbox" disabled="" />
-1 lampadaire à 3 spots</li>
-<li><input type="checkbox" disabled="" />
-1 fauteuil en cuir + 2 repose pieds</li>
-<li><input type="checkbox" disabled="" />
-1 canapé 2 places</li>
-<li><input type="checkbox" disabled="" />
-1 canapé Rapido</li>
-<li><input type="checkbox" disabled="" />
-2 petits coussins assortis</li>
-<li><input type="checkbox" disabled="" />
-1 protège matelas de 140 cm</li>
-<li><input type="checkbox" disabled="" />
-<strong>1 plaid rouge</strong></li>
-<li><input type="checkbox" disabled="" />
-1 table pliante bois</li>
-<li><input type="checkbox" disabled="" />
-1 grande coupe à fruits en verre</li>
-<li><input type="checkbox" disabled="" />
-1 meuble de rangement vitré</li>
-<li><input type="checkbox" disabled="" />
-1 meuble bois 3 tiroirs 2 portes</li>
-<li><input type="checkbox" disabled="" />
-1 table bois</li>
-<li><input type="checkbox" disabled="" />
-10 chaises pliantes</li>
-<li><input type="checkbox" disabled="" />
-1 escabeau à 2 marches</li>
-<li><input type="checkbox" disabled="" />
-2 paires de jumelles</li>
-<li><input type="checkbox" disabled="" />
-jeux de société</li>
-<li><input type="checkbox" disabled="" />
-2 suspensions (éclairage)</li>
-<li><input type="checkbox" disabled="" />
-1 mini-chaîne</li>
-<li><input type="checkbox" disabled="" />
-1 lecteur-enregistreur de DVD</li>
-<li><input type="checkbox" disabled="" />
-1 collier magnétique (ou boucle magnifique) pour malentendants appareillés</li>
-<li><input type="checkbox" disabled="" />
-1 adapteur électrique</li>
+<li><label><input type="checkbox" />1 cartographie</label></li>
+<li><label><input type="checkbox" />3 cadres</label></li>
+<li><label><input type="checkbox" />4 tringlettes</label></li>
+<li><label><input type="checkbox" />6 rideaux</label></li>
+<li><label><input type="checkbox" /><strong>1 télévision LG +
+télécommande</strong></label></li>
+<li><label><input type="checkbox" /><strong>1 décodeur + box orange +
+télécommande</strong></label></li>
+<li><label><input type="checkbox" /><strong>1 décodeur branché en HDMI
+sur la télévision</strong></label></li>
+<li><label><input type="checkbox" /><strong>1 boîtier
+Tydom</strong></label></li>
+<li><label><input type="checkbox" />1 téléphone</label></li>
+<li><label><input type="checkbox" />1 meuble à 3 tiroirs</label></li>
+<li><label><input type="checkbox" />1 table basse en bois</label></li>
+<li><label><input type="checkbox" />1 lampadaire
+mono-branche</label></li>
+<li><label><input type="checkbox" />1 lampadaire à 3 spots</label></li>
+<li><label><input type="checkbox" />2 fauteuils en cuir + 2 repose
+pieds</label></li>
+<li><label><input type="checkbox" />1 canapé 2 places</label></li>
+<li><label><input type="checkbox" />1 canapé Rapido</label></li>
+<li><label><input type="checkbox" />2 petits coussins
+assortis</label></li>
+<li><label><input type="checkbox" />1 protège matelas de 140
+cm</label></li>
+<li><label><input type="checkbox" />1 plaid rouge + 1 plaid
+gris</label></li>
+<li><label><input type="checkbox" />1 table pliante bois + 1 chaise
+pliante</label></li>
+<li><label><input type="checkbox" />1 grande coupe à fruits en
+verre</label></li>
+<li><label><input type="checkbox" />1 meuble de rangement
+vitré</label></li>
+<li><label><input type="checkbox" />1 meuble bois 3 tiroirs 2
+portes</label></li>
+<li><label><input type="checkbox" />1 table bois + 1 fossile de
+trilobite géant sur support mural</label></li>
+<li><label><input type="checkbox" />10 chaises</label></li>
+<li><label><input type="checkbox" />1 escabeau à 2 marches</label></li>
+<li><label><input type="checkbox" />2 paires de jumelles</label></li>
+<li><label><input type="checkbox" />jeux de société</label></li>
+<li><label><input type="checkbox" />1 suspension(éclairage)</label></li>
+<li><label><input type="checkbox" />1 mini-chaîne</label></li>
+<li><label><input type="checkbox" />1 lecteur-enregistreur de
+DVD</label></li>
+<li><label><input type="checkbox" />1 collier magnétique (ou boucle
+magnifique) pour malentendants appareillés</label></li>
+<li><label><input type="checkbox" />1 adapteur électrique
+universel</label></li>
 </ul>
 <h2 id="électro-ménager">Électro-ménager</h2>
 <ul class="task-list">
-<li><input type="checkbox" disabled="" />
-1 réfrigérateur<ul class="task-list">
-<li><input type="checkbox" disabled="" />
-1 bac à légumes</li>
-<li><input type="checkbox" disabled="" />
-4 éléments de porte</li>
-<li><input type="checkbox" disabled="" />
-1 partie congélateur</li>
-<li><input type="checkbox" disabled="" />
-3 tiroirs</li>
-<li><input type="checkbox" disabled="" />
-5 plaques en verre</li>
+<li><label><input type="checkbox" />1 réfrigérateur</label>
+<ul class="task-list">
+<li><label><input type="checkbox" />1 bac à légumes</label></li>
+<li><label><input type="checkbox" />4 éléments de porte</label></li>
+<li><label><input type="checkbox" />1 partie congélateur</label></li>
+<li><label><input type="checkbox" />3 tiroirs</label></li>
+<li><label><input type="checkbox" />5 plaques en verre</label></li>
 </ul></li>
-<li><input type="checkbox" disabled="" />
-1 four électrique Viva<ul class="task-list">
-<li><input type="checkbox" disabled="" />
-2 plaques de four</li>
-<li><input type="checkbox" disabled="" />
-2 grilles de four</li>
+<li><label><input type="checkbox" />1 four électrique Viva</label>
+<ul class="task-list">
+<li><label><input type="checkbox" />2 plaques de four</label></li>
+<li><label><input type="checkbox" />2 grilles de four</label></li>
 </ul></li>
-<li><input type="checkbox" disabled="" />
-1 four à micro-ondes Candy<ul class="task-list">
-<li><input type="checkbox" disabled="" />
-1 plateau tournant</li>
+<li><label><input type="checkbox" />1 four à micro-ondes Candy</label>
+<ul class="task-list">
+<li><label><input type="checkbox" />1 plateau tournant</label></li>
 </ul></li>
-<li><input type="checkbox" disabled="" />
-1 plaque à induction 4 feux</li>
-<li><input type="checkbox" disabled="" />
-1 hotte</li>
-<li><input type="checkbox" disabled="" />
-1 lave-vaisselle</li>
-<li><input type="checkbox" disabled="" />
-1 lave-linge sèche-linge</li>
-<li><input type="checkbox" disabled="" />
-1 balance électronique de cuisine (5 kg max)</li>
-<li><input type="checkbox" disabled="" />
-<strong>1 service à fondue électrique</strong></li>
-<li><input type="checkbox" disabled="" />
-<strong>1 appareil à raclette/grill</strong></li>
-<li><input type="checkbox" disabled="" />
-<strong>1 cafetière Magimix Nespresso</strong></li>
-<li><input type="checkbox" disabled="" />
-<strong>1 cafetière électrique</strong></li>
-<li><input type="checkbox" disabled="" />
-<strong>1 grille-pain</strong></li>
-<li><input type="checkbox" disabled="" />
-<strong>1 bouilloire « Cosy Life »</strong></li>
-<li><input type="checkbox" disabled="" />
-<strong>1 robot Kenwood + accessoires</strong></li>
-<li><input type="checkbox" disabled="" />
-<strong>1 pierrade Tefal</strong></li>
+<li><label><input type="checkbox" />1 plaque à induction 4
+feux</label></li>
+<li><label><input type="checkbox" />1 hotte</label></li>
+<li><label><input type="checkbox" />1 lave-vaisselle</label></li>
+<li><label><input type="checkbox" />1 lave-linge
+sèche-linge</label></li>
+<li><label><input type="checkbox" />1 balance électronique de cuisine (5
+kg max)</label></li>
+<li><label><input type="checkbox" /><strong>1 service à fondue
+électrique</strong></label></li>
+<li><label><input type="checkbox" /><strong>1 appareil à
+raclette/grill</strong></label></li>
+<li><label><input type="checkbox" /><strong>1 cafetière Magimix
+Nespresso</strong></label></li>
+<li><label><input type="checkbox" /><strong>1 cafetière
+électrique</strong></label></li>
+<li><label><input type="checkbox" /><strong>1
+grille-pain</strong></label></li>
+<li><label><input type="checkbox" /><strong>1 bouilloire
+Tefal</strong></label></li>
+<li><label><input type="checkbox" /><strong>1 robot Kenwood +
+accessoires</strong></label></li>
+<li><label><input type="checkbox" /><strong>1 pierrade
+Tefal</strong></label></li>
 </ul>
 <h2 id="vaisselle">Vaisselle</h2>
 <ul class="task-list">
-<li><input type="checkbox" disabled="" />
-1 cafetière à piston</li>
-<li><input type="checkbox" disabled="" />
-2 théières en pyrex</li>
-<li><input type="checkbox" disabled="" />
-2 théières en faïence</li>
-<li><input type="checkbox" disabled="" />
-9 tasses à café</li>
-<li><input type="checkbox" disabled="" />
-2 coquetiers</li>
-<li><input type="checkbox" disabled="" />
-23 assiettes plates</li>
-<li><input type="checkbox" disabled="" />
-23 assiettes à dessert</li>
-<li><input type="checkbox" disabled="" />
-24 assiettes creuses</li>
-<li><input type="checkbox" disabled="" />
-26 verres</li>
-<li><input type="checkbox" disabled="" />
-12 verres ballons</li>
-<li><input type="checkbox" disabled="" />
-11 flûtes à champagne</li>
-<li><input type="checkbox" disabled="" />
-19 bols</li>
-<li><input type="checkbox" disabled="" />
-10 mugs</li>
-<li><input type="checkbox" disabled="" />
-<strong>1 cocotte-minute</strong></li>
-<li><input type="checkbox" disabled="" />
-1 faitout + couvercle</li>
-<li><input type="checkbox" disabled="" />
-3 casseroles + 3 couvercles</li>
-<li><input type="checkbox" disabled="" />
-1 sauteuse + couvercle pyrex</li>
-<li><input type="checkbox" disabled="" />
-1 couvercle universel</li>
-<li><input type="checkbox" disabled="" />
-1 chinois</li>
-<li><input type="checkbox" disabled="" />
-1 passoire en plastique</li>
-<li><input type="checkbox" disabled="" />
-3 saladiers</li>
-<li><input type="checkbox" disabled="" />
-3 plats à gratin en faïence</li>
-<li><input type="checkbox" disabled="" />
-3 plats à gratin en pyrex</li>
-<li><input type="checkbox" disabled="" />
-1 presse fruits en pyrex</li>
-<li><input type="checkbox" disabled="" />
-9 moules à gâteaux en silicone</li>
-<li><input type="checkbox" disabled="" />
-1 moule à cake</li>
-<li><input type="checkbox" disabled="" />
-1 moule à gâteaux métallique</li>
-<li><input type="checkbox" disabled="" />
-1 essoreuse à salade</li>
-<li><input type="checkbox" disabled="" />
-1 crépière</li>
-<li><input type="checkbox" disabled="" />
-2 poêles</li>
-<li><input type="checkbox" disabled="" />
-2 planches à découper</li>
-<li><input type="checkbox" disabled="" />
-2 carafes en pyrex</li>
-<li><input type="checkbox" disabled="" />
-1 carafe en faïence</li>
-<li><input type="checkbox" disabled="" />
-1 plateau à desservir</li>
-<li><input type="checkbox" disabled="" />
-1 support aimanté pour couteaux</li>
-<li><input type="checkbox" disabled="" />
-2 couteaux à découper</li>
-<li><input type="checkbox" disabled="" />
-1 couteau à pain</li>
-<li><input type="checkbox" disabled="" />
-4 couteaux d’office</li>
-<li><input type="checkbox" disabled="" />
-1 fusil à aiguiser</li>
-<li><input type="checkbox" disabled="" />
-4 suspensions sur tringlettes</li>
-<li><input type="checkbox" disabled="" />
-2 égouttoirs à vaisselle sur tringlettes</li>
-<li><input type="checkbox" disabled="" />
-3 pots à ustensiles</li>
-<li><input type="checkbox" disabled="" />
-1 service à salade en bois</li>
-<li><input type="checkbox" disabled="" />
-1 service à salade en plastique</li>
-<li><input type="checkbox" disabled="" />
-2 cuillères en bois</li>
-<li><input type="checkbox" disabled="" />
-1 spatule en bois</li>
-<li><input type="checkbox" disabled="" />
-2 pinceaux en silicone</li>
-<li><input type="checkbox" disabled="" />
-1 écumoire</li>
-<li><input type="checkbox" disabled="" />
-1 écrase purée</li>
-<li><input type="checkbox" disabled="" />
-1 louche</li>
-<li><input type="checkbox" disabled="" />
-1 fouet</li>
-<li><input type="checkbox" disabled="" />
-1 range couverts</li>
-<li><input type="checkbox" disabled="" />
-25 cuillères à soupe</li>
-<li><input type="checkbox" disabled="" />
-26 couteaux en inox</li>
-<li><input type="checkbox" disabled="" />
-22 fourchettes</li>
-<li><input type="checkbox" disabled="" />
-25 petites cuillères</li>
-<li><input type="checkbox" disabled="" />
-1 casse-noix</li>
-<li><input type="checkbox" disabled="" />
-1 économe</li>
-<li><input type="checkbox" disabled="" />
-1 presse-ail</li>
-<li><input type="checkbox" disabled="" />
-1 limonadier</li>
-<li><input type="checkbox" disabled="" />
-1 paire de ciseaux</li>
-<li><input type="checkbox" disabled="" />
-2 cuillères à confiture</li>
-<li><input type="checkbox" disabled="" />
-1 pelle à gâteaux</li>
-<li><input type="checkbox" disabled="" />
-1 râpe plate universelle</li>
-<li><input type="checkbox" disabled="" />
-5 dessous de plats métalliques</li>
-<li><input type="checkbox" disabled="" />
-1 fourchette et 1 cuillère de service</li>
-<li><input type="checkbox" disabled="" />
-1 spatule en plastique</li>
-<li><input type="checkbox" disabled="" />
-2 maryses en silicone</li>
-<li><input type="checkbox" disabled="" />
-1 séparateur de jaunes d’œufs</li>
-<li><input type="checkbox" disabled="" />
-1 cuillère portionneuse à glace</li>
-<li><input type="checkbox" disabled="" />
-1 boule à thé individuelle</li>
-<li><input type="checkbox" disabled="" />
-1 couscoussier / cuit-vapeur de 8 L</li>
+<li><label><input type="checkbox" />2 théières en pyrex</label></li>
+<li><label><input type="checkbox" />1 théière en faïence</label></li>
+<li><label><input type="checkbox" />11 tasses à café</label></li>
+<li><label><input type="checkbox" />2 coquetiers</label></li>
+<li><label><input type="checkbox" />22 assiettes plates</label></li>
+<li><label><input type="checkbox" />22 assiettes à dessert</label></li>
+<li><label><input type="checkbox" />23 assiettes creuses</label></li>
+<li><label><input type="checkbox" />25 verres</label></li>
+<li><label><input type="checkbox" />15 verres ballons</label></li>
+<li><label><input type="checkbox" />16 flûtes à champagne</label></li>
+<li><label><input type="checkbox" />17 bols</label></li>
+<li><label><input type="checkbox" />9 mugs</label></li>
+<li><label><input type="checkbox" /><strong>1
+cocotte-minute</strong></label></li>
+<li><label><input type="checkbox" />1 faitout + couvercle</label></li>
+<li><label><input type="checkbox" />3 casseroles + 3
+couvercles</label></li>
+<li><label><input type="checkbox" />1 sauteuse + couvercle
+pyrex</label></li>
+<li><label><input type="checkbox" />1 couvercle universel</label></li>
+<li><label><input type="checkbox" />1 chinois</label></li>
+<li><label><input type="checkbox" />1 passoire en plastique</label></li>
+<li><label><input type="checkbox" />3 saladiers</label></li>
+<li><label><input type="checkbox" />3 plats à gratin en
+faïence</label></li>
+<li><label><input type="checkbox" />3 plats à gratin en
+pyrex</label></li>
+<li><label><input type="checkbox" />1 presse fruits en
+pyrex</label></li>
+<li><label><input type="checkbox" />9 moules à gâteaux en
+silicone</label></li>
+<li><label><input type="checkbox" />1 moule à cake</label></li>
+<li><label><input type="checkbox" />1 moule à gâteaux
+métallique</label></li>
+<li><label><input type="checkbox" />1 essoreuse à salade</label></li>
+<li><label><input type="checkbox" />1 crépière</label></li>
+<li><label><input type="checkbox" />2 poêles</label></li>
+<li><label><input type="checkbox" />2 planches à découper</label></li>
+<li><label><input type="checkbox" />2 carafes en pyrex</label></li>
+<li><label><input type="checkbox" />1 carafe en faïence</label></li>
+<li><label><input type="checkbox" />2 plateaux à desservir</label></li>
+<li><label><input type="checkbox" />1 support aimanté pour
+couteaux</label></li>
+<li><label><input type="checkbox" />2 couteaux à découper</label></li>
+<li><label><input type="checkbox" />1 couteau à pain</label></li>
+<li><label><input type="checkbox" />4 couteaux d’office + 1 couteau à
+huîtres</label></li>
+<li><label><input type="checkbox" />1 fusil à aiguiser</label></li>
+<li><label><input type="checkbox" />4 suspensions sur
+tringlettes</label></li>
+<li><label><input type="checkbox" />2 égouttoirs à vaisselle sur
+tringlettes</label></li>
+<li><label><input type="checkbox" />3 pots à ustensiles</label></li>
+<li><label><input type="checkbox" />1 service à salade en
+bois</label></li>
+<li><label><input type="checkbox" />1 service à salade en
+plastique</label></li>
+<li><label><input type="checkbox" />2 cuillères en bois</label></li>
+<li><label><input type="checkbox" />2 spatule en bois</label></li>
+<li><label><input type="checkbox" />2 pinceaux en silicone</label></li>
+<li><label><input type="checkbox" />1 écumoire</label></li>
+<li><label><input type="checkbox" />1 écrase purée</label></li>
+<li><label><input type="checkbox" />1 louche</label></li>
+<li><label><input type="checkbox" />1 fouet</label></li>
+<li><label><input type="checkbox" />1 range couverts</label></li>
+<li><label><input type="checkbox" />24 cuillères à soupe</label></li>
+<li><label><input type="checkbox" />24 couteaux en inox +10 couteaux à
+steaks</label></li>
+<li><label><input type="checkbox" />21 fourchettes</label></li>
+<li><label><input type="checkbox" />24 petites cuillères</label></li>
+<li><label><input type="checkbox" />1 casse-noix</label></li>
+<li><label><input type="checkbox" />2 économes + 1 roulette à
+pizza</label></li>
+<li><label><input type="checkbox" />1 presse-ail</label></li>
+<li><label><input type="checkbox" />1 limonadier</label></li>
+<li><label><input type="checkbox" />1 paire de ciseaux</label></li>
+<li><label><input type="checkbox" />2 cuillères à confiture</label></li>
+<li><label><input type="checkbox" />1 pelle à gâteaux</label></li>
+<li><label><input type="checkbox" />1 râpe plate
+universelle</label></li>
+<li><label><input type="checkbox" />5 dessous de plats
+métalliques</label></li>
+<li><label><input type="checkbox" />1 fourchette et 1 cuillère de
+service</label></li>
+<li><label><input type="checkbox" />1 spatule en plastique</label></li>
+<li><label><input type="checkbox" />2 maryses en silicone</label></li>
+<li><label><input type="checkbox" />1 séparateur de jaunes
+d’œufs</label></li>
+<li><label><input type="checkbox" />1 cuillère portionneuse à
+glace</label></li>
+<li><label><input type="checkbox" />1 boule à thé individuelle + 2
+pinces à thé</label></li>
+<li><label><input type="checkbox" />1 couscoussier / cuit-vapeur de 8
+L</label></li>
 </ul>
 <h2 id="salle-deau-1">Salle d’eau 1</h2>
 <ul class="task-list">
-<li><input type="checkbox" disabled="" />
-1 miroir avec tablette</li>
-<li><input type="checkbox" disabled="" />
-1 meuble colonne porte-miroir</li>
-<li><input type="checkbox" disabled="" />
-3 étagères en verre</li>
-<li><input type="checkbox" disabled="" />
-1 chaise pliante</li>
-<li><input type="checkbox" disabled="" />
-1 poubelle à pédale</li>
-<li><input type="checkbox" disabled="" />
-1 porte-manteau sur porte à 3 patères</li>
-<li><input type="checkbox" disabled="" />
-1 support 3 étagères métallique</li>
-<li><input type="checkbox" disabled="" />
-1 porte serviettes à 4 branches</li>
-<li><input type="checkbox" disabled="" />
-1 miroir de rasage</li>
-<li><input type="checkbox" disabled="" />
-1 support serviette invité</li>
-<li><input type="checkbox" disabled="" />
-1 sèche-cheveux</li>
+<li><label><input type="checkbox" />1 miroir avec tablette</label></li>
+<li><label><input type="checkbox" />1 meuble colonne
+porte-miroir</label></li>
+<li><label><input type="checkbox" />3 étagères en verre</label></li>
+<li><label><input type="checkbox" />1 chaise pliante</label></li>
+<li><label><input type="checkbox" />1 poubelle à pédale</label></li>
+<li><label><input type="checkbox" />1 porte-manteau sur porte à 3
+patères</label></li>
+<li><label><input type="checkbox" />1 support 3 étagères
+métallique</label></li>
+<li><label><input type="checkbox" />1 porte serviettes à 4
+branches</label></li>
+<li><label><input type="checkbox" />1 miroir de rasage + 1 porte
+savon</label></li>
+<li><label><input type="checkbox" />1 support serviette
+invité</label></li>
+<li><label><input type="checkbox" />1 sèche-cheveux</label></li>
 </ul>
 <h2 id="wc">WC</h2>
 <ul class="task-list">
-<li><input type="checkbox" disabled="" />
-1 dévidoir papier</li>
-<li><input type="checkbox" disabled="" />
-1 balayette + socle</li>
+<li><label><input type="checkbox" />1 dévidoir papier</label></li>
+<li><label><input type="checkbox" />1 balayette + socle + 1 petit repose
+pied en bois</label></li>
 </ul>
 <h2 id="salle-deau-2">Salle d’eau 2</h2>
 <ul class="task-list">
-<li><input type="checkbox" disabled="" />
-1 miroir avec tablette</li>
-<li><input type="checkbox" disabled="" />
-2 meubles colonne dont 1 avec miroir et 3 étagères en verre</li>
-<li><input type="checkbox" disabled="" />
-1 chaise pliante</li>
-<li><input type="checkbox" disabled="" />
-1 porte serviette 4 branches</li>
-<li><input type="checkbox" disabled="" />
-1 poubelle à pédale</li>
-<li><input type="checkbox" disabled="" />
-1 porte-manteau sur porte à 3 patères</li>
-<li><input type="checkbox" disabled="" />
-1 support 3 étagères métallique</li>
-<li><input type="checkbox" disabled="" />
-1 support serviette invité</li>
-<li><input type="checkbox" disabled="" />
-1 porte-manteau sur porte à 3 patères</li>
-<li><input type="checkbox" disabled="" />
-1 porte-manteau à 3 patères</li>
-<li><input type="checkbox" disabled="" />
-1 sèche-cheveux</li>
+<li><label><input type="checkbox" />1 miroir avec tablette</label></li>
+<li><label><input type="checkbox" />2 meubles colonne dont 1 avec miroir
+et 3 étagères en verre</label></li>
+<li><label><input type="checkbox" />1 chaise pliante</label></li>
+<li><label><input type="checkbox" />1 porte serviette 4
+branches</label></li>
+<li><label><input type="checkbox" />1 poubelle à pédale</label></li>
+<li><label><input type="checkbox" />1 porte-manteau sur porte à 3
+patères</label></li>
+<li><label><input type="checkbox" />1 support 3 étagères
+métallique</label></li>
+<li><label><input type="checkbox" />1 support serviette
+invité</label></li>
+<li><label><input type="checkbox" />1 porte-manteau sur porte à 3
+patères</label></li>
+<li><label><input type="checkbox" />1 porte-manteau à 3
+patères</label></li>
+<li><label><input type="checkbox" />1 sèche-cheveux + 1 porte
+savon</label></li>
 </ul>
 <h2 id="chambre-1">Chambre 1</h2>
 <ul class="task-list">
-<li><input type="checkbox" disabled="" />
-2 tringlettes et 2 voilages</li>
-<li><input type="checkbox" disabled="" />
-1 chaise pliante</li>
-<li><input type="checkbox" disabled="" />
-1 armoire penderie à 2 portes</li>
-<li><input type="checkbox" disabled="" />
-1 cadre</li>
-<li><input type="checkbox" disabled="" />
-2 étagères en bois</li>
-<li><input type="checkbox" disabled="" />
-2 lampes de chevet</li>
-<li><input type="checkbox" disabled="" />
-1 téléphone</li>
-<li><input type="checkbox" disabled="" />
-2 sommiers et 2 matelas de 80 cm</li>
-<li><input type="checkbox" disabled="" />
-2 protèges matelas PVC-coton</li>
-<li><input type="checkbox" disabled="" />
-<strong>2 couettes</strong></li>
-<li><input type="checkbox" disabled="" />
-<strong>2 oreillers</strong></li>
-<li><input type="checkbox" disabled="" />
-1 chaise haute</li>
-<li><input type="checkbox" disabled="" />
-1 applique (éclairage)</li>
-<li><input type="checkbox" disabled="" />
-1 porte-manteau sur porte à 4 patères</li>
-<li><input type="checkbox" disabled="" />
-1 lit bébé bois pliant 60 cm × 120 cm</li>
-<li><input type="checkbox" disabled="" />
-1 matelas bébé</li>
-<li><input type="checkbox" disabled="" />
-1 protège matelas bébé</li>
-<li><input type="checkbox" disabled="" />
-1 drap housse bébé</li>
-<li><input type="checkbox" disabled="" />
-1 couette bébé</li>
-<li><input type="checkbox" disabled="" />
-1 housse de couette bébé</li>
+<li><label><input type="checkbox" />2 tringlettes et 2
+voilages</label></li>
+<li><label><input type="checkbox" />1 chaise pliante</label></li>
+<li><label><input type="checkbox" />1 armoire penderie à 2
+portes</label></li>
+<li><label><input type="checkbox" />1 cadre</label></li>
+<li><label><input type="checkbox" />2 étagères en bois</label></li>
+<li><label><input type="checkbox" />2 lampes de chevet</label></li>
+<li><label><input type="checkbox" />1 téléphone</label></li>
+<li><label><input type="checkbox" />2 sommiers électriques et 2 matelas
+de 80 cm</label></li>
+<li><label><input type="checkbox" />2 protèges matelas
+PVC-coton</label></li>
+<li><label><input type="checkbox" /><strong>2
+couettes</strong></label></li>
+<li><label><input type="checkbox" /><strong>2 oreillers</strong> + 1
+dessus de lit polaire</label></li>
+<li><label><input type="checkbox" />1 chaise haute</label></li>
+<li><label><input type="checkbox" />1 applique (éclairage)</label></li>
+<li><label><input type="checkbox" />1 porte-manteau sur porte à 4
+patères</label></li>
+<li><label><input type="checkbox" />1 lit bébé bois pliant 60 cm × 120
+cm</label></li>
+<li><label><input type="checkbox" />1 matelas bébé</label></li>
+<li><label><input type="checkbox" />1 protège matelas bébé</label></li>
+<li><label><input type="checkbox" />1 drap housse bébé</label></li>
+<li><label><input type="checkbox" />1 couette bébé</label></li>
+<li><label><input type="checkbox" />1 housse de couette
+bébé</label></li>
 </ul>
 <h2 id="chambre-2">Chambre 2</h2>
 <ul class="task-list">
-<li><input type="checkbox" disabled="" />
-1 tringlette et 1 voilage</li>
-<li><input type="checkbox" disabled="" />
-1 lit 140 cm</li>
-<li><input type="checkbox" disabled="" />
-4 tiroirs de rangement</li>
-<li><input type="checkbox" disabled="" />
-1 matelas de 140 cm</li>
-<li><input type="checkbox" disabled="" />
-1 protège matelas PVC-coton</li>
-<li><input type="checkbox" disabled="" />
-<strong>2 oreillers</strong></li>
-<li><input type="checkbox" disabled="" />
-<strong>1 couette</strong></li>
-<li><input type="checkbox" disabled="" />
-1 dessus de lit écru à pompoms</li>
-<li><input type="checkbox" disabled="" />
-2 tablettes en bois</li>
-<li><input type="checkbox" disabled="" />
-2 lampes de chevet rouges</li>
-<li><input type="checkbox" disabled="" />
-1 armoire penderie à 2 portes et 4 tiroirs</li>
-<li><input type="checkbox" disabled="" />
-1 applique (éclairage)</li>
-<li><input type="checkbox" disabled="" />
-1 porte-manteau sur porte à 4 patères</li>
-<li><input type="checkbox" disabled="" />
-1 radio-réveil</li>
+<li><label><input type="checkbox" />1 tringlette et 1
+voilage</label></li>
+<li><label><input type="checkbox" />1 lit 140 cm</label></li>
+<li><label><input type="checkbox" />4 tiroirs de rangement</label></li>
+<li><label><input type="checkbox" />1 matelas de 140 cm</label></li>
+<li><label><input type="checkbox" />1 protège matelas
+PVC-coton</label></li>
+<li><label><input type="checkbox" /><strong>2
+oreillers</strong></label></li>
+<li><label><input type="checkbox" /><strong>1 couette</strong> + 1
+dessus de lit polaire</label></li>
+<li><label><input type="checkbox" />2 tablettes en bois</label></li>
+<li><label><input type="checkbox" />2 lampes de chevet
+rouges</label></li>
+<li><label><input type="checkbox" />1 armoire penderie à 2 portes et 4
+tiroirs</label></li>
+<li><label><input type="checkbox" />1 applique (éclairage)</label></li>
+<li><label><input type="checkbox" />1 porte-manteau sur porte à 4
+patères</label></li>
+<li><label><input type="checkbox" />1 radio-réveil</label></li>
 </ul>
 <h2 id="chambre-3">Chambre 3</h2>
 <ul class="task-list">
-<li><input type="checkbox" disabled="" />
-2 tringlettes et 2 voilages</li>
-<li><input type="checkbox" disabled="" />
-2 ensembles de lits superposés sur coffres avec portes coulissantes</li>
-<li><input type="checkbox" disabled="" />
-4 spots</li>
-<li><input type="checkbox" disabled="" />
-8 matelas superposés 2 par 2 (maintenus par Velcro)</li>
-<li><input type="checkbox" disabled="" />
-4 alèses PVC-coton</li>
-<li><input type="checkbox" disabled="" />
-7 oreillers</li>
-<li><input type="checkbox" disabled="" />
-4 couettes</li>
-<li><input type="checkbox" disabled="" />
-3 chaises pliantes</li>
-<li><input type="checkbox" disabled="" />
-1 étagère en bois</li>
-<li><input type="checkbox" disabled="" />
-1 commode en bois à 3 tiroirs</li>
-<li><input type="checkbox" disabled="" />
-1 suspension (éclairage)</li>
-<li><input type="checkbox" disabled="" />
-1 bureau</li>
-<li><input type="checkbox" disabled="" />
-1 porte-manteau sur porte à 4 patères</li>
+<li><label><input type="checkbox" />2 tringlettes et 2
+voilages</label></li>
+<li><label><input type="checkbox" />2 ensembles de lits superposés sur
+coffres avec portes coulissantes</label></li>
+<li><label><input type="checkbox" />4 spots</label></li>
+<li><label><input type="checkbox" />8 matelas superposés 2 par 2
+(maintenus par Velcro)</label></li>
+<li><label><input type="checkbox" />4 alèses PVC-coton</label></li>
+<li><label><input type="checkbox" />7 oreillers</label></li>
+<li><label><input type="checkbox" />4 couettes + 3 dessus de lits en
+polaire</label></li>
+<li><label><input type="checkbox" />1 chaise pliante + 3 sièges pliants
+anciens</label></li>
+<li><label><input type="checkbox" />1 étagère en bois</label></li>
+<li><label><input type="checkbox" />1 commode en bois à 3
+tiroirs</label></li>
+<li><label><input type="checkbox" />1 suspension
+(éclairage)</label></li>
+<li><label><input type="checkbox" />1 bureau + 1 poste de télévision LG
+sur support mural (en cours d’installation)</label></li>
+<li><label><input type="checkbox" />1 porte-manteau sur porte à 4
+patères</label></li>
 </ul>
 <h2 id="literie">Literie</h2>
 <ul class="task-list">
-<li><input type="checkbox" disabled="" />
-taies d’oreiller</li>
-<li><input type="checkbox" disabled="" />
-oreillers</li>
-<li><input type="checkbox" disabled="" />
-draps housse de 140 cm</li>
-<li><input type="checkbox" disabled="" />
-draps housse de 80 cm et de 90 cm</li>
-<li><input type="checkbox" disabled="" />
-draps housse de 80 cm</li>
-<li><input type="checkbox" disabled="" />
-drap housse de 60 cm × 120 cm</li>
-<li><input type="checkbox" disabled="" />
-housses de couette 1 place</li>
-<li><input type="checkbox" disabled="" />
-housse de couette 2 places</li>
-<li><input type="checkbox" disabled="" />
-housse de couette bébé</li>
-<li><input type="checkbox" disabled="" />
-protège matelas bébé</li>
-<li><input type="checkbox" disabled="" />
-protèges matelas de 80 cm</li>
-<li><input type="checkbox" disabled="" />
-protèges matelas de 90 cm</li>
-<li><input type="checkbox" disabled="" />
-protèges matelas de 140 cm</li>
-<li><input type="checkbox" disabled="" />
-4 couvertures 1 place</li>
-<li><input type="checkbox" disabled="" />
-2 couvertures 2 places</li>
+<li><label><input type="checkbox" />taies d’oreiller</label></li>
+<li><label><input type="checkbox" />oreillers</label></li>
+<li><label><input type="checkbox" />draps housse de 140 cm</label></li>
+<li><label><input type="checkbox" />draps housse de 90 cm</label></li>
+<li><label><input type="checkbox" />draps housse de 80 cm</label></li>
+<li><label><input type="checkbox" />drap housse de 60 cm × 120
+cm</label></li>
+<li><label><input type="checkbox" />housses de couette 1
+place</label></li>
+<li><label><input type="checkbox" />housses de couette 2
+places</label></li>
+<li><label><input type="checkbox" />housse de couette bébé</label></li>
+<li><label><input type="checkbox" />protège matelas bébé</label></li>
+<li><label><input type="checkbox" />protèges matelas de 80
+cm</label></li>
+<li><label><input type="checkbox" />protèges matelas de 90
+cm</label></li>
+<li><label><input type="checkbox" />protèges matelas de 140
+cm</label></li>
+<li><label><input type="checkbox" />4 dessus de lits 1 place: disparus
+(3 dessus de lits à la place: voir avec Grange)</label></li>
+<li><label><input type="checkbox" />2 dessus de lits 2
+places</label></li>
 </ul>
 <h2 id="autre-linge-de-maison">Autre linge de maison</h2>
 <ul class="task-list">
-<li><input type="checkbox" disabled="" />
-serviettes de table</li>
-<li><input type="checkbox" disabled="" />
-draps de douche</li>
-<li><input type="checkbox" disabled="" />
-serviettes de toilette</li>
-<li><input type="checkbox" disabled="" />
-tapis de bains</li>
-<li><input type="checkbox" disabled="" />
-essuies mains</li>
-<li><input type="checkbox" disabled="" />
-gants de toilette</li>
-<li><input type="checkbox" disabled="" />
-serviettes invités</li>
-<li><input type="checkbox" disabled="" />
-torchons à vaisselle</li>
+<li><label><input type="checkbox" />serviettes de table</label></li>
+<li><label><input type="checkbox" />draps de douche</label></li>
+<li><label><input type="checkbox" />serviettes de toilette</label></li>
+<li><label><input type="checkbox" />tapis de bains</label></li>
+<li><label><input type="checkbox" />essuies mains</label></li>
+<li><label><input type="checkbox" />gants de toilette</label></li>
+<li><label><input type="checkbox" />serviettes invités</label></li>
+<li><label><input type="checkbox" />torchons à vaisselle + Torchons à
+vaisselle</label></li>
 </ul>
 <h2 id="terrasse-jardin">Terrasse jardin</h2>
 <ul class="task-list">
-<li><input type="checkbox" disabled="" />
-1 table 12 places avec bancs fixes</li>
-<li><input type="checkbox" disabled="" />
-1 parasol déporté 3 m × 4 m</li>
-<li><input type="checkbox" disabled="" />
-1 petit parasol</li>
-<li><input type="checkbox" disabled="" />
-4 fauteuils de jardin plastique blanc</li>
-<li><input type="checkbox" disabled="" />
-2 fauteuils relax</li>
-<li><input type="checkbox" disabled="" />
-2 chaises longues</li>
-<li><input type="checkbox" disabled="" />
-1 grand barbecue Weber à gaz</li>
-<li><input type="checkbox" disabled="" />
-1 petit barbecue Weber à charbon</li>
-<li><input type="checkbox" disabled="" />
-1 grand coffre de rangement</li>
+<li><label><input type="checkbox" />1 table 12 places avec bancs
+fixes</label></li>
+<li><label><input type="checkbox" />1 parasol déporté 3 m × 4
+m</label></li>
+<li><label><input type="checkbox" />1 petit parasol</label></li>
+<li><label><input type="checkbox" />4 fauteuils de jardin plastique
+blanc</label></li>
+<li><label><input type="checkbox" />2 fauteuils relax</label></li>
+<li><label><input type="checkbox" />2 chaises longues</label></li>
+<li><label><input type="checkbox" />1 grand barbecue Weber à
+gaz</label></li>
+<li><label><input type="checkbox" />1 grand coffre de
+rangement</label></li>
 </ul>
 </body>
 </html>
