@@ -421,8 +421,13 @@ blockquote:after{content:no-close-quote;}
 .bold{font-weight:bold !important;}
 .italic{font-style:italic !important;}
 .widget.companyname{display:block;}
-.widget.companyname a{font-family:"Karla", Verdana, Geneva, sans-serif;font-weight:bold;color:#fff;line-height:24px;letter-spacing:inherit;font-size:18px;-ms-word-break:break-word;word-break:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;hyphens:auto;}
-.widget.companyname a:hover{cursor:pointer;text-decoration:none;}
+.widget.companyname p{font-family:"Karla", Verdana, Geneva, sans-serif;font-weight:bold;color:#fff;line-height:24px;letter-spacing:inherit;font-size:18px;-ms-word-break:break-word;word-break:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;hyphens:auto;}
+.widget.companyname .tiny {
+     font-size: 0.9em;
+     font-weight: normal;
+     font-style: normal;
+     color: #fff;
+   }
 @media only screen and (max-width: 480px){.widget.companyname a{font-size:18px;}
 }
 .contactform fieldset{border:none;padding:0;margin:20px 0;}
@@ -1025,7 +1030,7 @@ table {width: 450px; height: 204px;border-collapse: collapse; border-spacing: 0p
 tr.table_header {height: 19px;background-color: rgb(230, 230, 230);font-weight: bold;}
 p.vert {writing-mode: tb-rl}
 
-div#mySidenav { width = 0px;}
+div#mySidenav { width: 0px;}
 
 /* The side navigation menu */
 div.sidenav {
